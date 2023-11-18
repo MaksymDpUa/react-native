@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     height: 549,
     flexShrink: 0,
     marginTop: "auto",
-    borderRadius: "25px 25px 0px 0px",
+    borderRadius: "25px 25px 25px 25px",
     backgroundColor: "#fff",
     // backgroundColor: "#fff",
     // alignItems: "center",
