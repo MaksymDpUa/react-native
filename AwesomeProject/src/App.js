@@ -2,8 +2,16 @@ import { StatusBar } from "expo-status-bar";
 import { ImageBackground, StyleSheet, Text, View } from "react-native";
 import bcgImg from "../assets/images/PhotoBG.png";
 import RegistrationScreen from "./screens/RegistrationScreen";
+import { useFonts } from "expo-font";
 
 export default function App() {
+  const [fontsLoaded] = useFonts({
+    Roboto: require("../assets/fonts/Roboto-Regular.ttf"),
+  });
+
+  if (!fontsLoaded) {
+    return null;
+  }
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -12,8 +20,6 @@ export default function App() {
         // imageStyle={{ height: 300 }}
         style={styles.image}
       >
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Lets try</Text>
         <RegistrationScreen />
         <StatusBar style="auto" />
       </ImageBackground>
@@ -32,7 +38,7 @@ const styles = StyleSheet.create({
   },
   image: {
     flex: 1,
-    justifyContent: "center",
+    // justifyContent: "center",
     // paddingTop: 0,
     // paddingRight: 16,
     // paddingBottom: 0,
