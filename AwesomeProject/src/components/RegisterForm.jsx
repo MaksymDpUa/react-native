@@ -29,10 +29,11 @@ const RegisterForm = () => {
         />
         <View>
           <TextInput
-            style={[styles.input, styles.inputPassword]}
+            style={styles.input}
             onChangeText={setPassword}
             value={password}
             placeholder="Пароль"
+            secureTextEntry="true"
           />
           <TouchableOpacity
             style={styles.showPasswordButton}
@@ -69,9 +70,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     backgroundColor: "rgba(246, 246, 246, 1)",
     borderRadius: 14,
-  },
-  inputPassword: {
-    secureTextEntry: true,
   },
   submitButton: {
     borderRadius: 100,

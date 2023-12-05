@@ -5,6 +5,8 @@ import {
   TouchableOpacity,
   View,
   Text,
+  KeyboardAvoidingView,
+  Platform,
 } from "react-native";
 
 const LogInForm = () => {
@@ -20,19 +22,20 @@ const LogInForm = () => {
           value={email}
           placeholder="Адреса електронної пошти"
         />
-        <View>
+        <View>   
           <TextInput
-            style={[styles.input, styles.inputPassword]}
+            style={styles.input}
             onChangeText={setPassword}
             value={password}
             placeholder="Пароль"
+            secureTextEntry="true"
           />
           <TouchableOpacity
             style={styles.showPasswordButton}
             onPress={() => {}}
           >
             <Text style={styles.showPassword}>Показати</Text>
-          </TouchableOpacity>
+          </TouchableOpacity>    
         </View>
       </View>
       <TouchableOpacity style={styles.submitButton} onPress={() => {}}>
@@ -62,9 +65,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     backgroundColor: "rgba(246, 246, 246, 1)",
     borderRadius: 14,
-  },
-  inputPassword: {
-    secureTextEntry: true,
   },
   submitButton: {
     borderRadius: 100,
