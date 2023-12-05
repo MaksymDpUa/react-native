@@ -1,13 +1,9 @@
-import { Image, View, StyleSheet } from "react-native";
-import { AddPhotoButton } from "./AddPhotoButton";
-import AddPhoto from "../../assets/addPhoto.svg";
+import { View, StyleSheet } from "react-native";
+
 import Svg, { Circle, Path, Rect } from "react-native-svg";
 export const Avatar = () => {
   return (
     <View style={styles.thumb}>
-      {/* <AddPhotoButton /> */}
-      {/* <AddPhoto /> */}
-      {/* <AddPhoto></AddPhoto> */}
       <Svg
         xmlns="http://www.w3.org/2000/svg"
         width="132"
@@ -37,9 +33,5 @@ const styles = StyleSheet.create({
     top: -60,
     alignSelf: "center",
     borderRadius: 16,
-    // marginLeft: "auto",
-    // marginRight: "auto",
-    // left: 176,
-    // transform: translateX(50),
   },
 });

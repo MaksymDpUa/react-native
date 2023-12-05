@@ -7,20 +7,13 @@ import {
   Text,
 } from "react-native";
 
-const RegisterForm = () => {
-  const [logIn, setLogIn] = useState("");
+const LogInForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   return (
     <View style={styles.formBox}>
       <View style={styles.inputBox}>
-        <TextInput
-          style={styles.input}
-          onChangeText={setLogIn}
-          value={logIn}
-          placeholder="Логін"
-        />
         <TextInput
           style={styles.input}
           onChangeText={setEmail}
@@ -43,10 +36,10 @@ const RegisterForm = () => {
         </View>
       </View>
       <TouchableOpacity style={styles.submitButton} onPress={() => {}}>
-        <Text style={styles.submitText}>Зареєструватися</Text>
+        <Text style={styles.submitText}>Увійти</Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => {}}>
-        <Text style={styles.logInText}>Вже є акаунт? Увійти</Text>
+        <Text style={styles.logInText}>Немає акаунту? Зареєструватися</Text>
       </TouchableOpacity>
     </View>
   );
@@ -107,4 +100,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default RegisterForm;
+export default LogInForm;
