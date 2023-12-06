@@ -33,7 +33,8 @@ const RegisterForm = () => {
             onChangeText={setPassword}
             value={password}
             placeholder="Пароль"
-            secureTextEntry="true"
+            secureTextEntry={true}
+            autoCapitalize="none"
           />
           <TouchableOpacity
             style={styles.showPasswordButton}
@@ -54,6 +55,7 @@ const RegisterForm = () => {
 };
 
 const styles = StyleSheet.create({
+
   formBox: {
     paddingEnd: 16,
     paddingStart: 16,

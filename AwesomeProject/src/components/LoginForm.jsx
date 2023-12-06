@@ -22,20 +22,21 @@ const LogInForm = () => {
           value={email}
           placeholder="Адреса електронної пошти"
         />
-        <View>   
+        <View>
           <TextInput
             style={styles.input}
             onChangeText={setPassword}
             value={password}
             placeholder="Пароль"
-            secureTextEntry="true"
+            secureTextEntry={true}
+            autoCapitalize="none"
           />
           <TouchableOpacity
             style={styles.showPasswordButton}
             onPress={() => {}}
           >
             <Text style={styles.showPassword}>Показати</Text>
-          </TouchableOpacity>    
+          </TouchableOpacity>
         </View>
       </View>
       <TouchableOpacity style={styles.submitButton} onPress={() => {}}>
