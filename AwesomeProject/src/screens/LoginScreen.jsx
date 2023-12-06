@@ -6,7 +6,9 @@ export default LogInScreen = () => {
   return (
     <ImageBackground source={bcgImg} resizeMode="cover" style={styles.image}>
       <View style={styles.formContainer}>
-        <Text style={styles.text}>Увійти</Text>
+        <Text style={styles.text} fontWeight="500">
+          Увійти
+        </Text>
         <LogInForm />
       </View>
     </ImageBackground>
@@ -31,7 +33,7 @@ const styles = StyleSheet.create({
     color: "#212121",
     margin: 0,
     textAlign: "center",
-    fontFamily: "Roboto",
+    fontFamily: "RobotoMedium",
     fontSize: 30,
     fontWeight: "500",
     letterSpacing: 0.3,

@@ -43,7 +43,10 @@ const LogInForm = () => {
         <Text style={styles.submitText}>Увійти</Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => {}}>
-        <Text style={styles.logInText}>Немає акаунту? Зареєструватися</Text>
+        <Text style={styles.logInText}>
+          Немає акаунту?{" "}
+          <Text style={styles.registerLink}>Зареєструватися</Text>
+        </Text>
       </TouchableOpacity>
     </View>
   );
@@ -75,7 +78,7 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(255, 108, 0, 1)",
   },
   submitText: {
-    fontFamily: "Roboto",
+    fontFamily: "RobotoRegular",
     fontSize: 16,
     textAlign: "center",
     color: "rgba(255, 255, 255, 1)",
@@ -84,7 +87,10 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 16,
     color: "rgba(27, 67, 113, 1)",
-    fontFamily: "Roboto",
+    fontFamily: "RobotoRegular",
+  },
+  registerLink: {
+    textDecorationLine: "underline",
   },
   showPasswordButton: {
     width: 80,
@@ -96,7 +102,7 @@ const styles = StyleSheet.create({
   showPassword: {
     color: "#1B4371",
     textAlign: "right",
-    fontFamily: "Roboto",
+    fontFamily: "RobotoRegular",
     fontSize: 16,
   },
 });

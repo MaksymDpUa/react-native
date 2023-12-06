@@ -55,7 +55,6 @@ const RegisterForm = () => {
 };
 
 const styles = StyleSheet.create({
-
   formBox: {
     paddingEnd: 16,
     paddingStart: 16,
@@ -81,7 +80,7 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(255, 108, 0, 1)",
   },
   submitText: {
-    fontFamily: "Roboto",
+    fontFamily: "RobotoRegular",
     fontSize: 16,
     textAlign: "center",
     color: "rgba(255, 255, 255, 1)",
@@ -90,7 +89,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 16,
     color: "rgba(27, 67, 113, 1)",
-    fontFamily: "Roboto",
+    fontFamily: "RobotoRegular",
   },
   showPasswordButton: {
     width: 80,
@@ -102,7 +101,7 @@ const styles = StyleSheet.create({
   showPassword: {
     color: "#1B4371",
     textAlign: "right",
-    fontFamily: "Roboto",
+    fontFamily: "RobotoRegular",
     fontSize: 16,
   },
 });
